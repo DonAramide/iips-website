@@ -592,6 +592,17 @@ p {
   stroke-width: 1.8;
 }
 
+.card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-icon--invify {
+  background: #fff;
+  padding: 0.35rem;
+}
+
 .project-grid .card {
   min-height: 100%;
 }
@@ -639,7 +650,7 @@ p {
 
 .infra-diagram {
   position: relative;
-  padding: 1.5rem 1.2rem 2.8rem;
+  padding: 1.5rem 1.2rem;
   border-radius: var(--radius-lg);
   background: radial-gradient(circle at top, #0f172a, #020617);
   color: #e5e7eb;
@@ -659,6 +670,10 @@ p {
   font-size: 0.8rem;
 }
 
+.infra-layer:last-of-type {
+  margin-bottom: 1.25rem;
+}
+
 .infra-dot {
   width: 9px;
   height: 9px;
@@ -668,16 +683,15 @@ p {
 }
 
 .infra-core {
-  position: absolute;
-  inset-inline: 50%;
-  bottom: 0.9rem;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
   padding: 0.55rem 1.25rem;
   border-radius: 999px;
   font-size: 0.78rem;
   background: linear-gradient(120deg, var(--color-secondary), var(--color-accent));
   color: #020617;
   font-weight: 600;
+  text-align: center;
 }
 
 .bullet-list {
