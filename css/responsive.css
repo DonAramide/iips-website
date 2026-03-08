@@ -1,0 +1,149 @@
+/* Responsive tweaks for IIPS website */
+
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .split,
+  .hero-grid,
+  .cta-container,
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+  }
+
+  .hero-grid {
+    gap: 2.5rem;
+  }
+
+  .hero-visual {
+    justify-content: flex-start;
+  }
+
+  .cta-container {
+    text-align: left;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding-block: 0.7rem;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .main-nav {
+    position: fixed;
+    inset-inline: 0;
+    top: 56px;
+    background: rgba(15, 23, 42, 0.97);
+    color: #e5e7eb;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.6rem 1.2rem 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.3s ease-out, opacity 0.25s ease-out;
+  }
+
+  .main-nav.is-open {
+    max-height: 420px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.45);
+  }
+
+  .nav-actions {
+    justify-content: flex-start;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .hero {
+    padding-top: 4.6rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-meta {
+    gap: 1.1rem;
+  }
+
+  .cta-container {
+    padding: 1.6rem 1.4rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-hero {
+    padding-top: 4.9rem;
+  }
+
+  .map-frame iframe {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 2.2rem, 100%);
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .hero-actions,
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-card {
+    padding: 1.5rem 1.3rem;
+  }
+
+  .card {
+    padding: 1.4rem 1.25rem;
+  }
+
+  .footer-bottom {
+    padding-inline: 1.2rem;
+  }
+}
+
