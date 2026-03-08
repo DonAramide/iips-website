@@ -596,6 +596,26 @@ p {
   min-height: 100%;
 }
 
+.vision-block {
+  margin-top: 3rem;
+  padding: 2rem 2rem;
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.vision-block h3 {
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+}
+
+.vision-block p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--color-muted);
+}
+
 .branding-card {
   min-height: 180px;
 }
